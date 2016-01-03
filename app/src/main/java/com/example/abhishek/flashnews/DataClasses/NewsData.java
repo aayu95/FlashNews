@@ -8,6 +8,7 @@ public class NewsData {
     private String author;
     private String category;
     private String url;
+    private String bitmap;
 
     public String getTitle() { return this.title; }
     public void setTitle(String brand) { this.title = brand; }
@@ -22,5 +23,14 @@ public class NewsData {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+
+    public String getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(String bitmap) {
+        this.bitmap = bitmap;
     }
 }

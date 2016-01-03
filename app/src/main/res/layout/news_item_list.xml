@@ -3,9 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="#FF97AAB6"
-    android:layout_margin="5dp"
+    android:layout_marginTop="5dp"
     android:layout_width="wrap_content"
     android:layout_height="250dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,22 +16,20 @@
             android:layout_width="70dp"
             android:layout_height="60dp"
             android:indeterminate="true"
-            android:layout_above="@+id/linearLayout"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
         <ImageView
             android:id="@+id/newsImage"
-            android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
-            android:scaleType="center"
             android:src="@drawable/placeholder"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:layout_alignBottom="@+id/linearLayout" />
 
         <LinearLayout
             android:orientation="vertical"
+            android:background="#C45C5C5A"
             android:layout_width="match_parent"
-            android:background="#AA000000"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout"
             android:layout_alignParentBottom="true"
@@ -43,11 +42,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffffff"
-                android:paddingTop="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:padding="5dp"
                 android:textStyle="bold"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.abhishek.flashnews.DataClasses.NewsData;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public PersonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_item_list, parent, false);
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.test_layout, parent, false);
             PersonViewHolder pvh = new PersonViewHolder(v);
             return pvh;
         }
